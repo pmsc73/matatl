@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hello_world</string>
+    <string name="textViewText">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="mainButton">I\'m a MoFo button!</string>
+    <string name="sorryButton">Sorry!</string>
+</resources>
