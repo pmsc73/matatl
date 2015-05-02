@@ -30,6 +30,9 @@ public class HelloWorld extends ActionBarActivity {
         happyCat = getResources().getDrawable(R.drawable.happy_cat);
         sorryButton = (Button) findViewById(R.id.sorryButton);
         catPic = (ImageButton) findViewById(R.id.catPic);
+        catPic.setAdjustViewBounds(true);
+        catPic.setMaxHeight(200);
+        catPic.setMaxWidth(200);
         catPic.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
