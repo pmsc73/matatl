@@ -15,7 +15,6 @@ import android.widget.TextView;
 
 public class HelloWorld extends ActionBarActivity {
     TextView mainTextView;
-    Button mainButton;
     Button sorryButton;
     ImageView catPic;
     Drawable angryCat;
