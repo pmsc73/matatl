@@ -6,4 +6,5 @@
     <string name="action_settings">Settings</string>
     <string name="mainButton">I\'m a MoFo button!</string>
     <string name="sorryButton">Sorry!</string>
+    <string name="catString">A cat</string>
 </resources>
