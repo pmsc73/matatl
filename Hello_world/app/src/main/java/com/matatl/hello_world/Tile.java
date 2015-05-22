@@ -6,8 +6,8 @@ import android.widget.ImageButton;
 import android.support.v7.app.ActionBarActivity;
 
 /**
- *
- * This class represents the clickable tiles it extends {link: }
+ * Represents a tile object in the game
+ * @see ImageButton
  * @author Philip
  */
  
