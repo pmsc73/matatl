@@ -1,45 +1,96 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HelloWorld">
+    tools:context=".HelloWorld"
+    android:rowCount="3"
+    android:columnCount="3">
 
     <TextView
         android:id="@+id/helloWorldTextView"
         android:text="@string/textViewText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:layout_weight="1"
-    />
+        />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:layout_weight="18"
         android:src="@drawable/happy_cat"
         android:visibility="visible"
         android:id="@+id/catPic"
         android:background="@null"
-    />
-    <LinearLayout
+        android:contentDescription="@string/catString"
+        />
+    <Button
+        android:id="@+id/sorryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-
-    >
-        <Button
-            android:id="@+id/sorryButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sorryButton"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:visibility="gone"
+        android:text="@string/sorryButton"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
         />
-    </LinearLayout>
-</LinearLayout>
+
+    <TextView
+        android:id="@+id/helloWorldTextView2"
+        android:text="@string/textViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/happy_cat"
+        android:visibility="visible"
+        android:id="@+id/catPic2"
+        android:background="@null"
+        android:contentDescription="@string/catString"
+        />
+    <Button
+        android:id="@+id/sorryButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sorryButton"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/helloWorldTextView3"
+        android:text="@string/textViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/happy_cat"
+        android:visibility="visible"
+        android:id="@+id/catPic3"
+        android:background="@null"
+        android:contentDescription="@string/catString"
+        />
+    <Button
+        android:id="@+id/sorryButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sorryButton"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        />
+</GridLayout>
