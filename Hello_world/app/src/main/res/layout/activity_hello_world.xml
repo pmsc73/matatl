@@ -8,13 +8,20 @@
     android:columnCount="3">
 
     <TextView
+        android:id="@+id/highScoreView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
         android:id="@+id/helloWorldTextView"
         android:text="@string/textViewText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        />
+    />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

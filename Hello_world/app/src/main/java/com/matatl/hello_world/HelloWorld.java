@@ -1,5 +1,6 @@
 package com.matatl.hello_world;
 
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.PictureDrawable;
 import android.support.v7.app.ActionBarActivity;
@@ -29,6 +30,15 @@ public class HelloWorld extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hello_world);
+        TextView scoreView = (TextView)findViewById(R.id.highScoreView);
+        SharedPreferences scorePrefs = getSharedPreferences("highScores",0);
+        String[] savedScores = scorePrefs.getString("highSchores","").split("\\|");
+        StringBuilder scoreBuild = new StringBuilder("");
+        scoreBuild.append("Hiscores: \n");
+        for(String score : savedScores) {
+            scoreBuild.append(score+"\n");
+        }
+        scoreView.setText(scoreBuild.toString());
 
         mainTextView = (TextView) findViewById(R.id.helloWorldTextView);
         mainTextView.setText("");
